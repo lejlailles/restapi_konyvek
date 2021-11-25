@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+body {
+  background-color: darkcyan;
+}
+
+main {
+  width: 700px;
+
+  margin: auto;
+  background-color: white;
+  font-family: "Lucida Handwriting", cursive;
+}
+
+.megjelenit div {
+  border: 2px solid grey;
+  padding: 5px;
+  text-align: center;
+  background-color: lightgray;
+  margin: 10px;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
+  border-radius:10%;
+}
+
+.megjelenit  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#rendezes {
+  padding: 10px;
+  margin: 10px;
+}
+
+.kereso {
+  margin: 10px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+
+}
+
+header {
+    text-align: center;
+}
+
+.urlap {
+
+    padding:10px;
+  display: flex;
+  justify-content: center;
+
+}
+
+input {
+    width:300px;
+}
+
+#ujadat {
+   
+    margin:10px;
+}
+
+#torol {
+    margin:10px;
+
+}
+#modosit {
+    margin:10px;
+
+}
+
+#modositas {
+    margin:10px;
+}
+
+.gombok {
+    display: flex;
+    justify-content: center;
+
+}

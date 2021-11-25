@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <title>Illés Lejla</title>
+    <meta charset="UTF-8" />
+     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript"></script>
+    <link href="stilus.css" rel="stylesheet" type="text/css" />
+  
+  </head>
+  <body>
+    <main>
+     
+        <header>
+          <h1>Könyvek</h1>
+        </header>
+        <nav>
+        
+        </nav>
+        <article>
+            <div class="kereso">
+                <label for="kereses">Kereső:  </label>
+                <input type="search" id="kereses" name="kereses">
+            </div>
+            <div class="megjelenit">
+
+
+
+             
+
+            </div>
+            <button id="rendezes">Rendezés ár szerint</button>
+
+            <div class="urlap">
+                <form id="ujadatok">
+                    <h4>Új adat felvétele:</h4>
+                    <label for="szerzo">Szerző:</label><br>
+                    <input type="text" id="szerzo" name="szerzo"><br>
+                    <label for="cim">Cím:</label><br>
+                    <input type="text" id="cim" name="cim"><br>
+                    <label for="ar">Ár:</label><br>
+                    <input type="text" id="ar" name="ar"><br>
+                    <label for="tipus">Típus:</label><br>
+                    <input type="text" id="tipus" name="tipus"><br>
+                    <br>
+                  </form>
+
+                  <form id="modositas">
+                    <h4>Módosítás:</h4>
+                    <label for="id">ID:</label><br>
+                    <select id="id">
+                       
+                    </select><br>
+                    <label for="szerzo">Szerző:</label><br>
+                    <input type="text" id="szerzo" name="szerzo"><br>
+                    <label for="cim">Cím:</label><br>
+                    <input type="text" id="cim" name="cim"><br>
+                    <label for="ar">Ár:</label><br>
+                    <input type="text" id="ar" name="ar"><br>
+                    <label for="tipus">Típus:</label><br>
+                    <input type="text" id="tipus" name="tipus"><br>
+                    <br>
+                  </form>
+                
+            </div>
+
+            <div class="gombok">
+            <button id="ujadat">Új adat beszúrása</button>
+            <button id="torol">1. ID-jú elem törlése</button>
+            <button id="modosit">2. ID-jú elem módosítása</button>
+        </div>
+            
+           
+           
+        </article>
+        
+
+
+        <footer></footer>
+      </div>
+    </main>
+  </body>
+</html>

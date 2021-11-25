@@ -1,0 +1,45 @@
+{
+  "konyvek": [
+    {
+      "id": "1",
+      "szerzo": "Delia Owens",
+      "cim": "Ahol a folyami rákok énekelnek",
+      "ar": 2000,
+      "tipus": "regény"
+    },
+    {
+      "id": "2",
+      "szerzo": "Yann Martel",
+      "cim": "Pí élete",
+      "ar": 5000,
+      "tipus": "novella"
+    },
+    {
+      "id": "3",
+      "szerzo": "Sarah Pearse",
+      "cim": "A szanatórium",
+      "ar": 4000,
+      "tipus": "regény"
+    },
+    {
+      "szerzo": "Stephen King",
+      "cim": "A ragyogas",
+      "ar": "2500",
+      "tipus": "regény",
+      "id": "nZCuSOH"
+    }
+
+  ],
+  "szerzok": [
+    {
+      "id": "1",
+      "nev": "Delia Owens",
+      "nemzetiseg": "amerikai"
+    },
+    {
+      "id": "2",
+      "nev": "Yann Martel",
+      "nemzetiseg": "kanadai"
+    }
+  ]
+}
