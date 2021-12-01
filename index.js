@@ -1,15 +1,26 @@
 $(function () {
+
+  /*ajax js példányosítás*/
   const myajax = new MyAjax();
+
+  /*elérési út*/
   let apivegpont = "http://localhost:3000/konyvek";
   const szuloelem = $(".megjelenit");
-  let rendezes = "?_sort=ar&_order=desc";
+ 
   // apivegpont+=szuro;
   console.log(apivegpont);
+
+  /*Tömb*/
   const ab = [];
+
+  /*rendezés*/
+  let rendezes = "?_sort=ar&_order=desc";
   $("#rendezes").on("click", () => {
     apivegpont += rendezes;
     myajax.adatotBeolvas(apivegpont, ab, megjelenit);
   });
+
+  /*Keresés*/
   $("#kereses").on("keyup", () => {
     let apivegpont = "http://localhost:3000/konyvek";
     apivegpont += "?q=" + $("#kereses").val();
@@ -31,10 +42,13 @@ $(function () {
   });
 
 
+  /* Adat törlés */
   $("#torol").on("click", () => {
     
     myajax.deleteAdat(apivegpont,1);
   });
+
+  /*Adat módosítás*/
 
   $("#modosit").on("click", () => {
     let ujadat = {
@@ -45,6 +59,21 @@ $(function () {
     };
     myajax.putAdat(apivegpont, ujadat,2);
   });
+
+  /*Select*/
+  function select(){
+    const szulElem=$("#selectSzulo");
+    const opcio=$("#selectOpcio");
+    ab.forEach((elem,index)=>{
+      const hozzAd = opcio.clone().appndTo(szulElem);
+      myajax.adatotBeolvas(apivegpont,ab,megjelenit);
+    });
+    opcio.remove();
+
+
+  }
+
+  /*Adatok kiírása*/
 
   function megjelenit(tomb) {
     let sablon = "";
